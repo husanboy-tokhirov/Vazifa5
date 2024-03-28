@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+}
+:root{
+    --gray: #999a9e;
+    --white: #fff;
+    --blue: #2b50bf;
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 500px;
+    box-shadow: 0px 5px 15px;
+}
+.auth{
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 20px;
+}
+.auth-check{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color:var(--white);
+    border: 1px solid var(--gray);
+    background-position: center;
+    transition: 0.5s;
+}
+.auth-check:checked{
+    background-color:var(--blue);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-image: url("./images/check.svg");
+}
+.auth-check1{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color:var(--gray);
+    border: 1px solid var(--gray);
+    background-position: center;
+    transition: 0.5s;
+}
+.auth-check1:checked{
+    background-color:var(--blue);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-image: url("./images/check.svg");
+}
